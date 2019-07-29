@@ -92,7 +92,7 @@ class _ConfirmLoginPageState extends State<ConfirmLoginPage> {
         );
   }
 
-  Future sendUserDetails() async {
+  void sendUserDetails() async {
     if (Utility.validateForm(formKey)) {
       removeAllFocus();
       toggleLoader(true);
